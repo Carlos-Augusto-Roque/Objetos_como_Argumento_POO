@@ -25,7 +25,7 @@ namespace Objetos_como_Argumento_POO.classes
             if(carrinho != null){
                 foreach (Produto p in carrinho)
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
                     System.Console.WriteLine($" R$ {p.Preco.ToString("n2")} - {p.Nome}");
                     Console.ResetColor();
                 }

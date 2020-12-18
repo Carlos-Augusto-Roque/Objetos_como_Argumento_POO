@@ -9,6 +9,11 @@ namespace Objetos_como_Argumento_POO
         {
             Console.Clear();
             int opcao;
+
+            Produto p = new Produto();
+            Produto produtos = new Produto();
+            Carrinho cooper = new Carrinho();
+
             do
             {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -50,38 +55,49 @@ namespace Objetos_como_Argumento_POO
                         System.Console.WriteLine($"[0] - SAIR DO MENU DO ADMINISTRADOR");
                         opcaoAdm = int.Parse(Console.ReadLine());
                         Console.ResetColor();
-
-                        Produto produtos = new Produto();
-                        Produto p = new Produto();
+                       
 
                         switch (opcaoAdm)
                         {
                             case 1:
                                 //cadastrar produtos
+                                Produto newProduto = new Produto();
                                 System.Console.Write("NOME DO PRODUTO: ");
-                                p.Nome = Console.ReadLine();
+                                newProduto.Nome = Console.ReadLine();
                                 System.Console.Write("CÓDIGO DO PRODUTO: ");
-                                p.Codigo = int.Parse(Console.ReadLine());
-                                System.Console.WriteLine("PREÇO DO PRODUTO: ");
-                                p.Preco = float.Parse(Console.ReadLine());
-                                produtos.CadastrarProduto(p);
+                                newProduto.Codigo = int.Parse(Console.ReadLine());
+                                System.Console.Write("PREÇO DO PRODUTO: ");
+                                newProduto.Preco = float.Parse(Console.ReadLine());
+
+                                p.CadastrarProduto(newProduto);
+
                             break;
 
                             case 2:
                                 //descadastrar produtos
+                                
                                 System.Console.WriteLine($"DIGITE O CÓDIGO DO PRODUTO");
                                 p.Codigo = int.Parse(Console.ReadLine());
-                                produtos.DescadastrarProduto(p);
-                                System.Console.WriteLine($"O PRODUTO {p.Codigo} FOI DESCADASTRADO!");
+                                p.DescadastrarProduto(p);
+                                System.Console.WriteLine($"O PRODUTO DE CÓDIGO {p.Codigo} FOI DESCADASTRADO!");
                             break;
 
                             case 3:
                                 //atualizar cadastro do produto
+                                Produto alterarProduto = new Produto();
+                                System.Console.WriteLine("Qual o código a ser alterado?");
+                                alterarProduto.Codigo = int.Parse(Console.ReadLine());
+
+                                System.Console.WriteLine("Qual a nova descricção do produto?");
+                                alterarProduto.Nome = Console.ReadLine();
+
+                                System.Console.WriteLine("Qual o novp preço?");
+                                alterarProduto.Preco = float.Parse(Console.ReadLine());
+
+                                p.AtualizarCadastro(alterarProduto.Codigo, alterarProduto);
                             break;
 
                             case 4:
-                                //listar produtos disponiveis
-                                Console.WriteLine($"Produto: {p.Nome} - Código{p.Codigo} - Preço{p.Preco} ");
                                 p.ListaProdCadastrados();
                             break;
 
