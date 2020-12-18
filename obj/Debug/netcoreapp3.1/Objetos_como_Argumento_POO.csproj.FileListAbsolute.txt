@@ -1,0 +1,13 @@
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\bin\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.exe
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\bin\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.deps.json
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\bin\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.runtimeconfig.json
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\bin\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.runtimeconfig.dev.json
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\bin\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.dll
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\bin\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.pdb
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.csprojAssemblyReference.cache
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.AssemblyInfoInputs.cache
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.AssemblyInfo.cs
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.csproj.CoreCompileInputs.cache
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.dll
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.pdb
+C:\Users\PC - CARLOS\Desktop\DEV\C#\Objetos_como_Argumento_POO\obj\Debug\netcoreapp3.1\Objetos_como_Argumento_POO.genruntimeconfig.cache
