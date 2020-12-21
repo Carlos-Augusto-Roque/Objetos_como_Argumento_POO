@@ -12,8 +12,8 @@ namespace Objetos_como_Argumento_POO
 
             Produto p = new Produto();
             Produto produtos = new Produto();
-            Carrinho cooper = new Carrinho();
-
+            Carrinho carrinho = new Carrinho();
+                                
             do
             {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -75,26 +75,37 @@ namespace Objetos_como_Argumento_POO
 
                             case 2:
                                 //descadastrar produtos
-                                
-                                System.Console.WriteLine($"DIGITE O CÓDIGO DO PRODUTO");
-                                p.Codigo = int.Parse(Console.ReadLine());
-                                p.DescadastrarProduto(p);
-                                System.Console.WriteLine($"O PRODUTO DE CÓDIGO {p.Codigo} FOI DESCADASTRADO!");
+                                Produto descadastrarProduto = new Produto();
+                                System.Console.Write($"CÓDIGO DO PRODUTO A SER DESCADASTRADO: ");
+                                descadastrarProduto.Codigo = int.Parse(Console.ReadLine());
+                                System.Console.WriteLine("");
+                                System.Console.WriteLine("--------------------------------------------------");
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                System.Console.WriteLine($"O PRODUTO DE CÓDIGO {descadastrarProduto.Codigo} FOI DESCADASTRADO!");
+
+                                p.DescadastrarProduto(descadastrarProduto.Codigo);
+                                Console.ResetColor();
                             break;
 
                             case 3:
                                 //atualizar cadastro do produto
                                 Produto alterarProduto = new Produto();
-                                System.Console.WriteLine("Qual o código a ser alterado?");
+                                System.Console.Write("CÓDIGO DO PRODUTO A SER ALTERADO: ");
                                 alterarProduto.Codigo = int.Parse(Console.ReadLine());
 
-                                System.Console.WriteLine("Qual a nova descricção do produto?");
+                                System.Console.Write("NOVA DESCRIÇÃO DO PRODUTO: ");
                                 alterarProduto.Nome = Console.ReadLine();
 
-                                System.Console.WriteLine("Qual o novp preço?");
+                                System.Console.Write("NOVO PREÇO DO PRODUTO: ");
                                 alterarProduto.Preco = float.Parse(Console.ReadLine());
+                                System.Console.WriteLine("");
+                                Console.ForegroundColor = ConsoleColor.Green;
+                                System.Console.WriteLine($"O PRODUTO DE CÓDIGO {alterarProduto.Codigo} FOI ATUALIZADO!");
+                                System.Console.WriteLine("----------------------------------------");
+                                System.Console.WriteLine(($"NOVO PRODUTO: {alterarProduto.Nome} - PREÇO R$ {alterarProduto.Preco}"));
 
                                 p.AtualizarCadastro(alterarProduto.Codigo, alterarProduto);
+                                Console.ResetColor();
                             break;
 
                             case 4:
@@ -124,11 +135,12 @@ namespace Objetos_como_Argumento_POO
                 break;
 
                 case 2:
-                    System.Console.WriteLine($"DIGITE A SENHA DO CLIENTE");
+                    System.Console.Write($"DIGITE A SENHA DO CLIENTE: ");
                     string senhaCliente = Console.ReadLine();
 
                     if(senhaCliente == "cliente"){
                         int opcaoCliente;
+                                                    
                         do
                         {
                         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -145,15 +157,19 @@ namespace Objetos_como_Argumento_POO
                         switch (opcaoCliente)
                         {
                             case 1:
-                                //adicionar produto no carrinho
+                                //adicionar ao carrinho
+                                                            
                             break;
 
                             case 2:
                                 //remover produto do carrinho
+                               
                             break;
 
                             case 3:
                                 //listar produtos do carrinho
+                                
+                                
                             break;
 
                             case 0:

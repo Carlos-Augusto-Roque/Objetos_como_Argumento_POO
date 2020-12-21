@@ -29,8 +29,9 @@ namespace Objetos_como_Argumento_POO.classes
         }
 
         //metodo para descadastrar produto    
-        public void DescadastrarProduto(Produto produto){
-            produtos.Remove(produto);
+        public void DescadastrarProduto(int codigo){
+            var prod = produtos.Find(x => x.Codigo == codigo);
+            produtos.Remove(prod);
         }
 
         //metodo para mostrar os produtos cadastrados
@@ -39,7 +40,7 @@ namespace Objetos_como_Argumento_POO.classes
                 foreach (Produto p in produtos)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    System.Console.WriteLine($" R$ {p.Preco.ToString("n2")} - {p.Nome}");
+                    System.Console.WriteLine($"----{p.Nome} - R$ {p.Preco.ToString("n2")}----");
                     Console.ResetColor();
                 }
                
@@ -47,6 +48,7 @@ namespace Objetos_como_Argumento_POO.classes
         }
 
         public void AtualizarCadastro(int _codigo,Produto _novoProduto){
+
             produtos.Find(x => x.Codigo == _codigo).Nome = _novoProduto.Nome;
             produtos.Find(x => x.Codigo == _codigo).Preco = _novoProduto.Preco;
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Objetos_como_Argumento_POO.classes
 {
-    public class Carrinho
+    public class Carrinho : Produto
     {
         public float ValorTotal { get; set; }
 
